@@ -10,6 +10,7 @@ body {
   color: white;
   background-image: url("./assets/background-stars.svg");
   background-color: #070724;
+  height: 100vh;
 }
 
 h1, h2 {
@@ -206,10 +207,10 @@ nav a:not(:last-child) {
   }
   #mobile-menu.active {
     display: block;
-    position: absolute;
+    position: fixed;
     background-color: #070724;
     width: 100%;
-    min-height: 140%;
+    height: 100%;
     z-index: 1;
     padding: 44px calc(8px + 1.5625vw) 0;
     margin: 0;
@@ -511,5 +512,8 @@ nav a:not(:last-child) {
   .stat h2 {
     font-size: 20px;
     letter-spacing: -0.75px;
+  }
+  .stat h4 {
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=style.css.map */
