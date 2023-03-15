@@ -23,35 +23,43 @@
         <a href="./index.html" class="logo">THE PLANETS </a>
         <img src="./assets/icon-hamburger.svg" alt="" class="icon-ham" onclick="openNav()">
         <nav id="mobile-menu">
-          <a class="hover-menu hover-menu-jupiter" href="./index.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Mercury -->
+          <a class="nav-menu hover jupiter" onclick="openOverview()" href="./index.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="#DEF4FC"/>
 </svg>
 MERCURY<img src="./assets/icon-arrow.svg" alt=""></a>
-          <a class="hover-menu hover-menu-jupiter" href="./venus.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Venus -->
+          <a class="nav-menu hover jupiter" onclick="openOverview()" href="./venus.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="#F7CC7F"/>
 </svg>
 VENUS <img src="./assets/icon-arrow.svg" alt=""></a>
-          <a class="hover-menu hover-menu-jupiter" href="./earth.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Earth -->
+          <a class="nav-menu hover jupiter" onclick="openOverview()" href="./earth.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="#545BFE"/>
 </svg>
 EARTH<img src="./assets/icon-arrow.svg" alt=""></a>
-          <a class="hover-menu hover-menu-jupiter" href="./mars.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Mars -->
+          <a class="nav-menu hover jupiter" onclick="openOverview()" href="./mars.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="#FF6A45"/>
 </svg>
 MARS<img src="./assets/icon-arrow.svg" alt=""></a>
-          <a class="hover-menu hover-menu-jupiter" href="./jupiter.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Jupiter -->
+          <a class="nav-menu hover active-link jupiter" onclick="openOverview()" href="./jupiter.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="#ECAD7A"/>
 </svg>
 JUPITER<img src="./assets/icon-arrow.svg" alt=""></a>
-          <a class="hover-menu hover-menu-jupiter" href="./saturn.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Saturn -->
+          <a class="nav-menu hover jupiter" onclick="openOverview()" href="./saturn.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="#FCCB6B"/>
 </svg>
 SATURN<img src="./assets/icon-arrow.svg" alt=""></a>
-          <a class="hover-menu hover-menu-jupiter" href="./uranus.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Uranus -->
+          <a class="nav-menu hover jupiter" onclick="openOverview()" href="./uranus.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="#65F0D5"/>
 </svg>
 URANUS<img src="./assets/icon-arrow.svg" alt=""></a>
-          <a class="hover-menu hover-menu-jupiter" href="./neptune.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <!-- Neptune -->
+          <a class="nav-menu hover jupiter" onclick="openOverview()" href="./neptune.html"><svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
 <circle cx="10" cy="10" r="10" fill="#497EFA"/>
 </svg>
 NEPTUNE<img src="./assets/icon-arrow.svg" alt=""></a>
@@ -82,10 +90,10 @@ NEPTUNE<img src="./assets/icon-arrow.svg" alt=""></a>
                 /></a> 
               </p>
             </div>
-            <div class="tab-menu tab-menu-jupiter">
-              <h3 class="hover-menu hover-menu-jupiter"><span class="num">01</span> OVERVIEW</h3>
-              <h3 class="hover-menu hover-menu-jupiter"><span class="num">02</span>INTERNAL <span class="mobile-hide">STRUCTURE</span> </h3>
-              <h3 class="hover-menu hover-menu-jupiter"><span class="num">03</span> SURFACE <span class="mobile-hide">GEOLOGY</span> </h3>
+            <div class="tab-menu">
+              <h3 class="hover tab jupiter" id="overview" onclick="openOverview()"><span class="num">01</span>OVERVIEW</h3>
+              <h3 class="hover tab jupiter" id="internal" onclick="openInternal()"><span class="num">02</span>INTERNAL <span class="mobile-hide">STRUCTURE</span> </h3>
+              <h3 class="hover tab jupiter" id="geology" onclick="openGeology()"><span class="num">03</span>SURFACE <span class="mobile-hide">GEOLOGY</span> </h3>
             </div>
           </div>
         </div>

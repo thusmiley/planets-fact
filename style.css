@@ -98,11 +98,11 @@ nav svg, nav img {
   display: none;
 }
 
-.hover-menu {
+.hover {
   position: relative;
 }
 
-.hover-menu:after {
+.hover:after {
   content: "";
   position: absolute;
   width: 100%;
@@ -114,9 +114,41 @@ nav svg, nav img {
   transition: transform 0.25s ease-out;
 }
 
-.hover-menu:hover:after, .hover-menu:active:after {
+.hover:hover:after, .hover:active:after {
   transform: scaleX(1);
   transform-origin: top left;
+}
+
+.mercury:after {
+  background-color: #419EBB;
+}
+
+.venus:after {
+  background-color: #EDA249;
+}
+
+.earth:after {
+  background-color: #6f2ed6;
+}
+
+.mars:after {
+  background-color: #D14C32;
+}
+
+.jupiter:after {
+  background-color: #D83A34;
+}
+
+.saturn:after {
+  background-color: #CD5120;
+}
+
+.uranus:after {
+  background-color: #1ec2a4;
+}
+
+.neptune:after {
+  background-color: #2d68f0;
 }
 
 nav a:hover, nav a:active {
@@ -125,38 +157,6 @@ nav a:hover, nav a:active {
 
 nav a:not(:last-child) {
   margin-right: 33px;
-}
-
-.hover-menu-mercury:after {
-  background-color: #419EBB;
-}
-
-.hover-menu-earth:after {
-  background-color: #6f2ed6;
-}
-
-.hover-menu-venus:after {
-  background-color: #EDA249;
-}
-
-.hover-menu-mars:after {
-  background-color: #D14C32;
-}
-
-.hover-menu-jupiter:after {
-  background-color: #D83A34;
-}
-
-.hover-menu-saturn:after {
-  background-color: #CD5120;
-}
-
-.hover-menu-uranus:after {
-  background-color: #1ec2a4;
-}
-
-.hover-menu-neptune:after {
-  background-color: #2d68f0;
 }
 
 @media only screen and (max-width: 1370px) {
@@ -177,11 +177,11 @@ nav a:not(:last-child) {
     padding-top: 0;
     padding-bottom: 27px;
   }
-  .hover-menu:after {
+  .hover:after {
     top: 42px;
     transform-origin: bottom right;
   }
-  .hover-menu:hover:after, .hover-menu:active:after {
+  .hover:hover:after, .hover:active:after {
     transform-origin: bottom left;
   }
 }
@@ -300,44 +300,12 @@ nav a:not(:last-child) {
   cursor: pointer;
 }
 
-.tab-menu h3:not(:last-child) {
-  margin-bottom: 16px;
-}
-
-.tab-menu .hover-menu:hover {
+.tab-menu h3:hover {
   background-color: #38384F;
 }
 
-.tab-menu-mercury .hover-menu:active {
-  background-color: #419EBB;
-}
-
-.tab-menu-venus .hover-menu:active {
-  background-color: #EDA249;
-}
-
-.tab-menu-earth .hover-menu:active {
-  background-color: #6f2ed6;
-}
-
-.tab-menu-mars .hover-menu:active {
-  background-color: #D14C32;
-}
-
-.tab-menu-jupiter .hover-menu:active {
-  background-color: #D83A34;
-}
-
-.tab-menu-saturn .hover-menu:active {
-  background-color: #CD5120;
-}
-
-.tab-menu-uranus .hover-menu:active {
-  background-color: #1ec2a4;
-}
-
-.tab-menu-neptune .hover-menu:active {
-  background-color: #2d68f0;
+.tab-menu h3:not(:last-child) {
+  margin-bottom: 16px;
 }
 
 .num {
@@ -459,8 +427,8 @@ nav a:not(:last-child) {
   .tab-menu h3 {
     border: none;
     padding: 20px 0;
-    opacity: 0.5;
     padding-bottom: 20px;
+    width: 100%;
   }
   .tab-menu h3:not(:last-child) {
     margin-bottom: 0;
@@ -471,11 +439,7 @@ nav a:not(:last-child) {
   .tab-menu h3:nth-child(3) {
     margin-right: calc(8px + 1.5625vw);
   }
-  .tab-menu .hover-menu:hover {
-    background-color: transparent;
-    opacity: 1;
-  }
-  .tab-menu .hover-menu:after {
+  .tab-menu .hover:after {
     top: 62px;
   }
   .planet-left img {

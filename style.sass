@@ -76,9 +76,9 @@ nav a
     padding-top: 27px
 nav svg, nav img
     display: none
-.hover-menu
+.hover
     position: relative
-.hover-menu:after
+.hover:after
     content: ""
     position: absolute
     width: 100%
@@ -88,29 +88,29 @@ nav svg, nav img
     left: 0
     transform-origin: top right
     transition: transform 0.25s ease-out
-.hover-menu:hover:after, .hover-menu:active:after
+.hover:hover:after, .hover:active:after
     transform: scaleX(1)
     transform-origin: top left
+.mercury:after
+    background-color: $mercury
+.venus:after
+    background-color: $venus
+.earth:after
+    background-color: $earth
+.mars:after
+    background-color: $mars
+.jupiter:after
+    background-color: $jupiter
+.saturn:after
+    background-color: $saturn
+.uranus:after
+    background-color: $uranus
+.neptune:after
+    background-color: $neptune
 nav a:hover, nav a:active
     opacity: 1
 nav a:not(:last-child)
     margin-right: 33px
-.hover-menu-mercury:after
-    background-color: $mercury
-.hover-menu-earth:after
-    background-color: $earth
-.hover-menu-venus:after
-    background-color: $venus
-.hover-menu-mars:after
-    background-color: $mars
-.hover-menu-jupiter:after
-    background-color: $jupiter
-.hover-menu-saturn:after
-    background-color: $saturn
-.hover-menu-uranus:after
-    background-color: $uranus
-.hover-menu-neptune:after
-    background-color: $neptune
 @media only screen and (max-width: 1370px)
     header .container, #planet-container
         max-width: 668px
@@ -125,10 +125,10 @@ nav a:not(:last-child)
         letter-spacing: 1px
         padding-top: 0
         padding-bottom: 27px
-    .hover-menu:after
+    .hover:after
         top: 42px
         transform-origin: bottom right
-    .hover-menu:hover:after, .hover-menu:active:after
+    .hover:hover:after, .hover:active:after
         transform-origin: bottom left
 @media only screen and (max-width: 670px)
     header .container, #planet-container
@@ -211,26 +211,10 @@ nav a:not(:last-child)
     border: 1px solid $light-gray
     padding: 12px 28px
     cursor: pointer
+.tab-menu h3:hover 
+    background-color: $gray
 .tab-menu h3:not(:last-child)
     margin-bottom: 16px
-.tab-menu .hover-menu:hover
-    background-color: $gray
-.tab-menu-mercury .hover-menu:active 
-    background-color: $mercury
-.tab-menu-venus .hover-menu:active 
-    background-color: $venus
-.tab-menu-earth .hover-menu:active 
-    background-color: $earth
-.tab-menu-mars .hover-menu:active 
-    background-color: $mars
-.tab-menu-jupiter .hover-menu:active 
-    background-color: $jupiter
-.tab-menu-saturn .hover-menu:active 
-    background-color: $saturn
-.tab-menu-uranus .hover-menu:active 
-    background-color: $uranus
-.tab-menu-neptune .hover-menu:active 
-    background-color: $neptune
 .num
     margin-right: 28px
     opacity: 0.5
@@ -320,18 +304,18 @@ nav a:not(:last-child)
     .tab-menu h3 
         border: none
         padding: 20px 0
-        opacity: 0.5
+        // opacity: 0.5
         padding-bottom: 20px
+        width: 100%
     .tab-menu h3:not(:last-child)
         margin-bottom: 0
     .tab-menu h3:nth-child(1)
         margin-left: calc(8px + 1.5625vw)
     .tab-menu h3:nth-child(3)
         margin-right: calc(8px + 1.5625vw)
-    .tab-menu .hover-menu:hover
-        background-color: transparent
-        opacity: 1
-    .tab-menu .hover-menu:after
+    // .tab-menu .hover:hover
+        // opacity: 1
+    .tab-menu .hover:after
         top: 62px
     .planet-left img
         width: 40%
