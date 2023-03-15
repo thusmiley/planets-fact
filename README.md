@@ -17,8 +17,8 @@ Desktop Design
 
 ### Links
 
-- Git URL: 
-- Live Site URL: 
+- Git URL: https://github.com/thusmiley/planets-fact.git
+- Live Site URL: https://thusmiley.github.io/planets-fact/
 
 
 ### Built with
