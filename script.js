@@ -26,61 +26,61 @@ let revolution = document.getElementById("revolution");
 let radius = document.getElementById("radius");
 let temperature = document.getElementById("temperature");
 
+function resetTabs(){
+    document.querySelector("#overview").style.backgroundColor = "";
+    document.querySelector("#internal").style.backgroundColor = "";
+    document.querySelector("#geology").style.backgroundColor = "";
+}
+
 // Overview tab
 function openOverview() {
   let index;
   if (document.title.includes("MERCURY")) {
+    resetTabs();
     document.querySelector(".active-link").style.color = "#419EBB";
     document.querySelector("#overview").style.backgroundColor = "#419EBB";
-    document.querySelector("#internal").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 0;
   }
   if (document.title.includes("VENUS")) {
+    resetTabs();
     document.querySelector(".active-link").style.color = "#EDA249";
     document.querySelector("#overview").style.backgroundColor = "#EDA249";
-    document.querySelector("#internal").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 1;
   }
   if (document.title.includes("EARTH")) {
+    resetTabs();
     document.querySelector(".active-link").style.color = "#6f2ed6";
     document.querySelector("#overview").style.backgroundColor = "#6f2ed6";
     index = 2;
   }
   if (document.title.includes("MARS")) {
+    resetTabs();
     document.querySelector(".active-link").style.color = "#D14C32";
     document.querySelector("#overview").style.backgroundColor = "#D14C32";
-    document.querySelector("#internal").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 3;
   }
   if (document.title.includes("JUPITER")) {
+    resetTabs();
     document.querySelector(".active-link").style.color = "#D83A34";
     document.querySelector("#overview").style.backgroundColor = "#D83A34";
-    document.querySelector("#internal").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 4;
   }
   if (document.title.includes("SATURN")) {
+    resetTabs();
     document.querySelector(".active-link").style.color = "#CD5120";
     document.querySelector("#overview").style.backgroundColor = "#CD5120";
-    document.querySelector("#internal").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 5;
   }
   if (document.title.includes("URANUS")) {
+    resetTabs();
     document.querySelector(".active-link").style.color = "#1ec2a4";
     document.querySelector("#overview").style.backgroundColor = "#1ec2a4";
-    document.querySelector("#internal").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 6;
   }
   if (document.title.includes("NEPTUNE")) {
+    resetTabs();
     document.querySelector(".active-link").style.color = "#2d68f0";
     document.querySelector("#overview").style.backgroundColor = "#2d68f0";
-    document.querySelector("#internal").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 7;
   }
   document.querySelector(".active-link").style.opacity = "1";
@@ -98,51 +98,43 @@ function openOverview() {
 function openInternal() {
   let index;
   if (document.title.includes("MERCURY")) {
+    resetTabs();
     document.querySelector("#internal").style.backgroundColor = "#419EBB";
-    document.querySelector("#overview").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 0;
   }
   if (document.title.includes("VENUS")) {
+    resetTabs();
     document.querySelector("#internal").style.backgroundColor = "#EDA249";
-    document.querySelector("#overview").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 1;
   }
   if (document.title.includes("EARTH")) {
+    resetTabs();
     document.querySelector("#internal").style.backgroundColor = "#6f2ed6";
-    document.querySelector("#overview").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 2;
   }
   if (document.title.includes("MARS")) {
+    resetTabs();
     document.querySelector("#internal").style.backgroundColor = "#D14C32";
-    document.querySelector("#overview").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 3;
   }
   if (document.title.includes("JUPITER")) {
+    resetTabs();
     document.querySelector("#internal").style.backgroundColor = "#D83A34";
-    document.querySelector("#overview").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 4;
   }
   if (document.title.includes("SATURN")) {
+    resetTabs();
     document.querySelector("#internal").style.backgroundColor = "#CD5120";
-    document.querySelector("#overview").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 5;
   }
   if (document.title.includes("URANUS")) {
+    resetTabs();
     document.querySelector("#internal").style.backgroundColor = "#1ec2a4";
-    document.querySelector("#overview").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 6;
   }
   if (document.title.includes("NEPTUNE")) {
+    resetTabs();
     document.querySelector("#internal").style.backgroundColor = "#2d68f0";
-    document.querySelector("#overview").style.backgroundColor = "";
-    document.querySelector("#geology").style.backgroundColor = "";
     index = 7;
   }
   planetOverview.innerHTML = data[index].structure.content;
@@ -154,51 +146,43 @@ function openInternal() {
 function openGeology() {
 let index;
 if (document.title.includes("MERCURY")) {
+  resetTabs();
   document.querySelector("#geology").style.backgroundColor = "#419EBB";
-  document.querySelector("#overview").style.backgroundColor = "";
-  document.querySelector("#internal").style.backgroundColor = "";
   index = 0;
 }
 if (document.title.includes("VENUS")) {
+  resetTabs();
   document.querySelector("#geology").style.backgroundColor = "#EDA249";
-  document.querySelector("#overview").style.backgroundColor = "";
-  document.querySelector("#internal").style.backgroundColor = "";
   index = 1;
 }
 if (document.title.includes("EARTH")) {
+  resetTabs();
   document.querySelector("#geology").style.backgroundColor = "#6f2ed6";
-  document.querySelector("#overview").style.backgroundColor = "";
-  document.querySelector("#internal").style.backgroundColor = "";
   index = 2;
 }
 if (document.title.includes("MARS")) {
+  resetTabs();
   document.querySelector("#geology").style.backgroundColor = "#D14C32";
-  document.querySelector("#overview").style.backgroundColor = "";
-  document.querySelector("#internal").style.backgroundColor = "";
   index = 3;
 }
 if (document.title.includes("JUPITER")) {
+  resetTabs();
   document.querySelector("#geology").style.backgroundColor = "#D83A34";
-  document.querySelector("#overview").style.backgroundColor = "";
-  document.querySelector("#internal").style.backgroundColor = "";
   index = 4;
 }
 if (document.title.includes("SATURN")) {
+  resetTabs();
   document.querySelector("#geology").style.backgroundColor = "#CD5120";
-  document.querySelector("#overview").style.backgroundColor = "";
-  document.querySelector("#internal").style.backgroundColor = "";
   index = 5;
 }
 if (document.title.includes("URANUS")) {
+  resetTabs();
   document.querySelector("#geology").style.backgroundColor = "#1ec2a4";
-  document.querySelector("#overview").style.backgroundColor = "";
-  document.querySelector("#internal").style.backgroundColor = "";
   index = 6;
 }
 if (document.title.includes("NEPTUNE")) {
+  resetTabs();
   document.querySelector("#geology").style.backgroundColor = "#2d68f0";
-  document.querySelector("#overview").style.backgroundColor = "";
-  document.querySelector("#internal").style.backgroundColor = "";
   index = 7;
 }
 planetOverview.innerHTML = data[index].geology.content;
